@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-5.times do |x|
+15.times do |x|
     Character.create(name: Faker::Movies::HarryPotter.character, location: Faker::Movies::HarryPotter.location, house: Faker::Movies::HarryPotter.house)
 end
 

@@ -1,0 +1,36 @@
+<div class="container1">
+    <h1>Pages#index</h1>
+    <h2> BIENVENIDO A HOWARTS </h2>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h3 class=titulo> PERSONAJES DE LA PELICULA </h3>
+
+            <table class="table table-striped">
+                <tr>
+                    <th> Nombre </th>
+                    <th> Locación </th>
+                    <th> Casa </th>
+                </tr>
+                <% @character.each do |x| %>
+                <tr>
+                    <td> <%= x.name %></td>
+                    <td> <%= x.location %> </td>
+                    <td> <%= x.house %></td>
+                </tr>
+                <% end %>
+            </table>
+        </div>
+
+        <div class="col-6">
+        <div class="d-flex align-items-center  justify-content-center" >
+            <%= image_tag '9.png', class: "img-fluid", alt:"imagendocasas", style: "width: 1000px; height:700px; object-fit:cover; margin-bottom:40px; " %>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
